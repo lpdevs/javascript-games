@@ -1,3 +1,3 @@
 # Javascript games
 
-Classical tetris game by JavaScript, HTML5, CSS
+Classical games by JavaScript, HTML5, CSS
