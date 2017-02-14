@@ -1,0 +1,57 @@
+canvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333333;
+}
+
+#movingCanvas{
+    background-color: transparent;
+}
+
+#textCanvas{
+    background-color: transparent;
+}
+
+#staticCanvas{
+    background-color: transparent;
+}
+
+#gridCanvas{
+    background-color: transparent;
+}
+
+#scoreCanvas{
+    background-color: #333333;
+}
+
+#introCanvas{
+    background-color: #333333;
+}
+
+#bgPreviewCanvas{
+   margin-left: 40px;
+}
+
+#brPreviewCanvas{
+   background: transparent;
+   margin-left: 40px;
+}
+
+#gdPreviewCanvas{
+    background: transparent;
+    margin-left: 40px;
+}
+
+#scoreCanvas{
+    background-color: transparent;
+}
+
+#title{
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-style: inherit;
+    color: #0099FF;
+}

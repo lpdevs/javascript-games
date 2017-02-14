@@ -1,0 +1,41 @@
+<!DOCTYLE html>
+<html>
+    <head>
+        <title>Tetris game</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="title" align="center">
+            Tetris game
+        </div>
+        <table width="800" align="center">
+            <tr>
+                <td width="240">
+                    <div style="position: relative;">
+                        <canvas id="introCanvas" width="200" height="540"></canvas>
+                        <canvas id="bgScoreCanvas" width="200" height="200"></canvas>
+                        <canvas id="scoreCanvas" width="200" height="200"></canvas>
+                    </div>
+                </td>
+                <td width="320">
+                    <div style="position: relative;" >
+                        <canvas id="backgroundCanvas" width="320" height="540"></canvas>
+                        <canvas id="movingCanvas" width="320" height="540"></canvas>
+                        <canvas id="staticCanvas" width="320" height="540"></canvas>
+                        <canvas id="gridCanvas" width="320" height="540"></canvas>
+                        <canvas id="textCanvas" width="320" height="540"></canvas>
+                    </div>
+                </td>
+                <td width="240">
+                    <div style="position: relative;">
+                        <canvas id="bgPreviewCanvas" width="200" height="200"></canvas>
+                        <canvas id="brPreviewCanvas" width="200" height="200"></canvas>
+                        <canvas id="gdPreviewCanvas" width="200" height="200"></canvas>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>    
