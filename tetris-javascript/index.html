@@ -1,41 +1,77 @@
 <!DOCTYLE html>
 <html>
-    <head>
-        <title>Tetris game</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <div id="title" align="center">
-            Tetris game
+<head>
+  <title>Tetris game v1.1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container container-main">
+
+    <h1 class="text-center text-primary">TETRIS GAME <small>version 1.1</small></h1>
+
+    <div class="row row-main">
+      <div class="col-sm-2 col-preview">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Score</div>
+          <div class="panel-body"><p id="score">0</p></div>
         </div>
-        <table width="800" align="center">
-            <tr>
-                <td width="240">
-                    <div style="position: relative;">
-                        <canvas id="introCanvas" width="200" height="540"></canvas>
-                        <canvas id="bgScoreCanvas" width="200" height="200"></canvas>
-                        <canvas id="scoreCanvas" width="200" height="200"></canvas>
-                    </div>
-                </td>
-                <td width="320">
-                    <div style="position: relative;" >
-                        <canvas id="backgroundCanvas" width="320" height="540"></canvas>
-                        <canvas id="movingCanvas" width="320" height="540"></canvas>
-                        <canvas id="staticCanvas" width="320" height="540"></canvas>
-                        <canvas id="gridCanvas" width="320" height="540"></canvas>
-                        <canvas id="textCanvas" width="320" height="540"></canvas>
-                    </div>
-                </td>
-                <td width="240">
-                    <div style="position: relative;">
-                        <canvas id="bgPreviewCanvas" width="200" height="200"></canvas>
-                        <canvas id="brPreviewCanvas" width="200" height="200"></canvas>
-                        <canvas id="gdPreviewCanvas" width="200" height="200"></canvas>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </body>
-</html>    
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">Level</div>
+          <div class="panel-body"><p id="level">1</p></div>
+        </div>
+
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-primary" id="btn-htp">How to play</button>
+
+        <div style="position: relative;" class="div-prevew">
+            <canvas class = "canvas canvas-preview" id="backgroundPrCanvas"></canvas>
+            <canvas class = "canvas canvas-preview" id="brickPrCanvas"></canvas>
+            <canvas class = "canvas canvas-preview" id="gridPrCanvas"></canvas>
+        </div>
+
+      </div>
+
+      <div class="col-sm-5 col-main">
+        <div style="position: relative;" >
+            <canvas class = "canvas canvas-main" id="backgroundCanvas"></canvas>
+            <canvas class = "canvas canvas-main" id="movingCanvas"></canvas>
+            <canvas class = "canvas canvas-main" id="staticCanvas"></canvas>
+            <canvas class = "canvas canvas-main" id="gridCanvas"></canvas>
+            <canvas class = "canvas canvas-main" id="textCanvas"></canvas>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+
+      </div>
+    </div>
+
+    <div id="modalStart" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title"><a class = text-danger>How to play<a></h3>
+          </div>
+          <div class="modal-body">
+            <p class="instruction"><a class = text-primary>Left:</a> a or &#8592;</p>
+            <p class="instruction"><a class = text-primary>Right:</a> d or &#8594;</p>
+            <p class="instruction"><a class = text-primary>Down:</a> s or &#8595;</p>
+            <p class="instruction"><a class = text-primary>Rotate:</a> w or &uarr;</p>
+            <p class="instruction"><a class = text-primary>Play/Pause:</a> Enter </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
