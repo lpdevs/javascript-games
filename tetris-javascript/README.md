@@ -4,8 +4,8 @@ Classical tetris game by JavaScript, HTML5, CSS
 
 # Library 
 
-  * Bootstrap 3
-  * Jquery
+  * [Bootstrap 3](https://www.w3schools.com/bootstrap/)
+  * [Jquery](https://www.w3schools.com/jquery/default.asp)
 
 # To do
 
